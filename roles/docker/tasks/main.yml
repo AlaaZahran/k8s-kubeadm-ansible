@@ -1,0 +1,11 @@
+ - name: install Docker
+     yum:
+       name: docker
+       state: present
+       update_cache: true
+
+   - name: start Docker
+     service:
+       name: docker
+       state: started
+       enabled: true

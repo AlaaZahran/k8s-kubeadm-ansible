@@ -1,0 +1,17 @@
+- hosts: all
+  roles:
+    - pre
+    - docker
+    - kubeadm
+    - restart
+
+
+- hosts : master
+    roles:
+      - join
+      - kube
+      - kubectl
+
+- hosts : client
+    roles:
+     -client 

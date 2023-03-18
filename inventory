@@ -1,0 +1,6 @@
+[master]
+master k8s-master.lab.local
+
+[clients]
+client k8s-client.lab.local
+
